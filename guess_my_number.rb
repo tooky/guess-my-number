@@ -5,7 +5,7 @@ class NumberGuesser
   end
 
   def guess
-    @min + (@max - @min) / 2
+    midpoint
   end
 
   def lower
@@ -14,6 +14,15 @@ class NumberGuesser
 
   def higher
     @min = guess + 1
+  end
+
+  private
+  def midpoint
+    @min + half_the_difference
+  end
+
+  def half_the_difference
+    (@max - @min) / 2
   end
 end
 
