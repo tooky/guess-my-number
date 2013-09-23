@@ -21,27 +21,22 @@ describe NumberGuesser do
   end
 
   it 'guesses all the way down to 1 efficiently' do
-    pending
     expect_to_guess_until(1)
   end
 
   it 'guesses all the way up to 100 efficiently' do
-    pending
     expect_to_guess_until(100)
   end
 
   it 'guesses 37' do
-    pending
     expect_to_guess_until(37)
   end
 
   it 'guesses 99' do
-    pending
     expect_to_guess_until(99)
   end
 
   it 'guesses 2' do
-    pending
     expect_to_guess_until(2)
   end
 

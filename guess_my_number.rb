@@ -1,18 +1,19 @@
 class NumberGuesser
   def initialize
-    @guess = 50
+    @max = 100
+    @min = 0
   end
 
   def guess
-    @guess
+    @min + (@max - @min) / 2
   end
 
   def lower
-    @guess -= 1
+    @max = guess - 1
   end
 
   def higher
-    @guess += 1
+    @min = guess + 1
   end
 end
 
