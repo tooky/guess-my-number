@@ -9,7 +9,6 @@ describe NumberGuesser do
   end
 
   it 'will guess lower' do
-    pending
     first_guess = player.guess
     player.lower
     expect(guess).to be < first_guess

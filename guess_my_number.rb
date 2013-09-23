@@ -1,8 +1,17 @@
 class NumberGuesser
+  def initialize
+    @guess = 50
+  end
+
   def guess
-    50
+    @guess
+  end
+
+  def lower
+    @guess -= 1
   end
 end
+
 def guess_my_number
   @guesser = NumberGuesser.new
   @guesser.guess
