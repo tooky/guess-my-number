@@ -4,7 +4,6 @@ describe NumberGuesser do
   let(:player) { NumberGuesser.new }
 
   it 'makes an initial guess between 1 and 100' do
-    pending
     expect(guess).to be <= 100
     expect(guess).to be >= 1
   end
