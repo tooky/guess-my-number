@@ -10,6 +10,10 @@ class NumberGuesser
   def lower
     @guess -= 1
   end
+
+  def higher
+    @guess += 1
+  end
 end
 
 def guess_my_number
